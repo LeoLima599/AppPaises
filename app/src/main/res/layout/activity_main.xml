@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Nome_pais"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center|center_horizontal"
+        android:text="@string/Pais_nome"
+        android:textSize="@dimen/textsize" />
+
+    <ImageView
+        android:id="@+id/PaisView"
+        android:layout_width="@dimen/img_width"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="2"
+        android:contentDescription="@string/Pais_nome"
+        app:srcCompat="@drawable/flag"
+        tools:srcCompat="@drawable/flag" />
+
+    <ImageView
+        android:id="@+id/ComidaView"
+        android:layout_width="@dimen/img_width"
+        android:layout_height="0sp"
+        android:layout_gravity="center"
+        android:layout_weight="2"
+        android:contentDescription="@string/Comida_nome"
+        app:srcCompat="@drawable/comida"
+        tools:srcCompat="@drawable/comida" />
+
+    <TextView
+        android:id="@+id/Nome_comida"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center|center_horizontal"
+        android:text="@string/Comida_nome"
+        android:textSize="@dimen/textsize" />
+
+</LinearLayout>
